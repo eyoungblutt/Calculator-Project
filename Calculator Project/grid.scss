@@ -1,0 +1,7 @@
+@mixin grid {
+  grid-template-areas:
+    "output output output"
+    "text1 text2 battery"
+    "buttons1 buttons2 buttons3"
+    "equals equals equals";
+}
