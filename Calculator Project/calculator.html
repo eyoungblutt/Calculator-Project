@@ -12,7 +12,7 @@
       href="https://fontlibrary.org//face/segment14"
       type="text/css"
     />
-    <script src="calculator.js"></script>
+    <script defer src="calculator.js"></script>
   </head>
   <body>
     <main class="main-calculator">
@@ -28,8 +28,8 @@
       </div>
       <div class="main-container__text__left">
         <p class="text-main">CATIGA</p>
-        <p class="text-sub">CD-8185</p>
-        <p class="text-sub">SIMPLE DESIGN CALCULATOR</p>
+        <p class="text-sub-one">CD-8185</p>
+        <p class="text-sub-two">SIMPLE DESIGN CALCULATOR</p>
       </div>
       <div class="main-container__text__right">
         <p class="text-main__center">8</p>
@@ -37,27 +37,25 @@
       </div>
 
       <div class="main-container__battery"></div>
-      <div class="main-container__button-column-left">
+      <div class="main-container__buttons">
         <button class="white-buttons">%</button>
         <button class="white-buttons"></button>
         <button class="white-buttons">CE</button>
         <button class="pink-button">ON/C</button>
-      </div>
-      <div class="main-container__button-columns-center">
-        <button class="center-buttons">7</button>
-        <button class="center-buttons">8</button>
+
+        <button class="center-buttons" id="button-7">7</button>
+        <button class="center-buttons" id="button-8">8</button>
         <button class="center-buttons">9</button>
-        <button class="center-buttons">4</button>
-        <button class="center-buttons">5</button>
-        <button class="center-buttons">6</button>
-        <button class="center-buttons">1</button>
-        <button class="center-buttons">2</button>
-        <button class="center-buttons">3</button>
-        <button class="center-buttons">0</button>
+        <button class="center-buttons" id="button-4">4</button>
+        <button class="center-buttons" id="button-5">5</button>
+        <button class="center-buttons" id="button-6">6</button>
+        <button class="center-buttons" id="button-1">1</button>
+        <button class="center-buttons" id="button-2">2</button>
+        <button class="center-buttons" id="button-3">3</button>
+        <button class="center-buttons" id="button-0">0</button>
         <button class="center-buttons">.</button>
         <button class="center-buttons">+/-</button>
-      </div>
-      <div class="main-container__button-column-right">
+
         <button class="white-buttons"></button>
         <button class="white-buttons">x</button>
         <button class="white-buttons">-</button>
