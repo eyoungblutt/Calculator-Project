@@ -7,6 +7,7 @@
   @include grid.grid;
   background-color: colours.$background-color;
   border-radius: 20px;
+  border: 2px solid colours.$text-colour;
   height: 600px;
   width: 400px;
   box-shadow: 4px 4px 4px colours.$text-colour;
@@ -21,6 +22,8 @@
   font-family: font.$font;
   resize: none;
   margin: 20px;
+  border: 2px solid colours.$text-colour;
+  border-radius: 10px;
 }
 
 .main-container__text__left {
@@ -78,31 +81,25 @@
   box-shadow: 2px 2px 2px rgb(44, 42, 42);
 }
 
+.main-container__buttons_center {
+  grid-area: buttons1 buttons2 buttons3;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .main-container__button-column-left {
   grid-area: buttons1;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  margin: 0px;
+  margin: 5px;
 }
 .main-container__button-columns-center {
   grid-area: buttons2;
-  // display: flex;
-  // flex-direction: row;
-  // flex-wrap: wrap;
-  // align-items: center;
-  // justify-content: center;
 }
 .main-container__button-column-right {
   grid-area: buttons3;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
   margin: 0px;
 }
 
 .center-buttons {
-  grid-area: buttons2;
   background-color: colours.$button-colour;
   color: white;
   border-radius: 7px;
@@ -114,13 +111,6 @@
   font-weight: bolder;
   box-shadow: 2px 2px 2px colours.$text-colour;
 }
-
-// .main-container__buttons {
-//   grid-area: buttons;
-//   display: inline-flex;
-//   flex-direction: rows;
-//   flex-direction: wrap;
-//   justify-content: center;
 
 .white-buttons {
   display: flex;
