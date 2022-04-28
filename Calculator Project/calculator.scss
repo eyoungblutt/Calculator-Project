@@ -8,7 +8,7 @@
   background-color: colours.$background-color;
   border-radius: 20px;
   border: 2px solid colours.$text-colour;
-  height: 600px;
+  height: 500px;
   width: 400px;
   box-shadow: 4px 4px 4px colours.$text-colour;
 }
@@ -26,77 +26,71 @@
   border-radius: 10px;
 }
 
-.main-container__text__left {
+.main-container__text {
   color: colours.$text-colour;
   grid-area: text1;
   height: 25px;
+  display: flex;
+
   .text-main {
     font-weight: bolder;
     margin: 0px;
     padding: 0px;
-    display: inline-block;
   }
   .text-sub-one {
     font-size: 8px;
     margin: 0px;
     padding: 0px;
-    display: inline-block;
   }
   .text-sub-two {
     font-size: 8px;
     margin: 0px;
     padding: 0px;
   }
-}
-
-.main-container__text__right {
-  grid-area: text2;
-  color: colours.$text-colour;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  height: 25px;
-
   .text-main__center {
     font-weight: bolder;
     margin: 0px;
     padding: 0px;
-    font-style: italic;
+    // font-style: italic;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-end;
   }
   .text-sub__center {
     font-size: 8px;
     margin: 0px;
     padding: 0px;
+    color: colours.$text-colour;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-end;
   }
-}
-
-.main-container__battery {
-  grid-area: text2, battery;
-  background-color: colours.$battery-colour;
-  height: 30px;
-  width: 100px;
-  margin: 20px;
-  border-radius: 10px;
-  border: 3px solid rgb(44, 42, 42);
-  box-shadow: 2px 2px 2px rgb(44, 42, 42);
+  .main-container__battery {
+    background-color: colours.$battery-colour;
+    height: 30px;
+    width: 100px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 3px solid rgb(44, 42, 42);
+    box-shadow: 2px 2px 2px rgb(44, 42, 42);
+  }
 }
 
 .main-container__buttons_center {
   grid-area: buttons1 buttons2 buttons3;
   display: flex;
-  justify-content: space-evenly;
 }
 
 .main-container__button-column-left {
   grid-area: buttons1;
   margin: 5px;
+  align-items: center;
 }
 .main-container__button-columns-center {
   grid-area: buttons2;
 }
 .main-container__button-column-right {
   grid-area: buttons3;
-  margin: 0px;
 }
 
 .center-buttons {
