@@ -1,4 +1,5 @@
-let numberDisplay = 
+// let numberDisplay = () => {
+// };
 
 const numberDisplay7 = () => {
   document.getElementById("number-display").innerText = 7;
@@ -49,34 +50,47 @@ const numberDisplay9 = () => {
 };
 document.getElementById("button-9").addEventListener("click", numberDisplay9);
 
-// const numberDisplayPercentage = () => {
-//   document.getElementById("number-display").innerText = "%";
-// };
-// document
-//   .getElementById("percentage-button")
-//   .addEventListener("click", numberDisplayPercentage);
+const numberDisplayPercentage = () => {
+  document.getElementById("number-display").innerText = "%";
+};
+document
+  .getElementById("percentage-button")
+  .addEventListener("click", numberDisplayPercentage);
 
-// const numberDisplayMultiply = () => {
-//   document.getElementById("number-display").innerText = "X";
-// };
-// document
-//   .getElementById("button-multiply")
-//   .addEventListener("click", numberDisplayMultiply);
+const numberDisplayMultiply = () => {
+  document.getElementById("number-display").innerText = "x";
+};
+document
+  .getElementById("button-multiply")
+  .addEventListener("click", numberDisplayMultiply);
 
-// const numberDisplayMinus = () => {
-//   document.getElementById("button-minus").innerText = "-";
-// };
-// document
-//   .getElementById("button-minus")
-//   .addEventListener("click", numberDisplayMinus);
-// const numberDisplayPlus = () => {
-//   document.getElementById("number-display").innerText = "+";
-// };
-// document
-//   .getElementById("button-plus")
-//   .addEventListener("click", numberDisplayPlus);
-// const newSum = () => {
-//   if {
-//     document.getElementById
-//   }
-// }
+const numberDisplayMinus = () => {
+  document.getElementById("button-minus").innerText = "-";
+};
+document
+  .getElementById("button-minus")
+  .addEventListener("click", numberDisplayMinus);
+const numberDisplayPlus = () => {
+  document.getElementById("number-display").innerText = "+";
+};
+document
+  .getElementById("button-plus")
+  .addEventListener("click", numberDisplayPlus);
+const numberDisplayEquals = () => {
+  document.getElementById("number-display").innerText = "=";
+};
+document
+  .getElementById("button-equals")
+  .addEventListener("click", numberDisplayEquals);
+const numberDisplayClear = () => {
+  document.getElementById("number-display").innerText = "";
+};
+document
+  .getElementById("button-clear")
+  .addEventListener("click", numberDisplayClear);
+const numberDisplayDot = () => {
+  document.getElementById("number-display").innerText = ".";
+};
+document
+  .getElementById("button-dot")
+  .addEventListener("click", numberDisplayDot);
