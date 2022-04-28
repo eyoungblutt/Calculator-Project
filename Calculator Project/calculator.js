@@ -1,5 +1,4 @@
-// let numberDisplay = () => {
-// };
+let numberDisplay;
 
 const numberDisplay7 = () => {
   document.getElementById("number-display").innerText = 7;
