@@ -2,7 +2,7 @@
   display: grid;
   grid-template-areas: "output output output" "text1 text1 text1" "buttons1 buttons2 buttons3" "equals equals equals";
   grid-template-columns: 100px 200px 100px;
-  grid-template-rows: 100px 50px 250px 100px;
+  grid-template-rows: 100px 75px 225px 100px;
   background-color: rgb(0, 187, 253);
   border-radius: 20px;
   border: 2px solid rgb(4, 76, 188);
@@ -32,7 +32,7 @@
   height: 25px;
   display: flex;
 }
-.main-container__text .text-main {
+.main-container__text flex .text-main {
   font-weight: bolder;
   margin: 0px;
   padding: 0px;

@@ -31,8 +31,7 @@
   grid-area: text1;
   height: 25px;
   display: flex;
-
-  .text-main {
+  flex .text-main {
     font-weight: bolder;
     margin: 0px;
     padding: 0px;
