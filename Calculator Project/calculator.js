@@ -1,11 +1,13 @@
 let numbersArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 for (let i = 0; i < numbersArr.length; i++) {
-  const buttonNumber = numbersArr[i];
-  const button = document.getElementById("button" + buttonNumber);
-  document.addEventListener("click", () => inputNumberDisplay(button));
+  let buttonNumber = numbersArr[i];
+  const button = "button" + buttonNumber;
+  document.addEventListener(
+    "click",
+    () => (inputNumberDisplay(button).innerText = buttonNumber)
+  );
 }
-
 let number = "";
 const inputNumberDisplay = (n) => {
   number += n;
