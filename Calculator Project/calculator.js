@@ -1,19 +1,24 @@
-let numbersArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+let numbersArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "."];
+const numberButtons = document.getElementsByClassName("center-buttons");
+let number = "";
 
 for (let i = 0; i < numbersArr.length; i++) {
-  let buttonNumber = numbersArr[i];
-  const button = "button" + buttonNumber;
-  document.addEventListener(
-    "click",
-    () => (inputNumberDisplay(button).innerText = buttonNumber)
-  );
+  numberButtons[i].addEventListener("click", () => {
+    number += numbersArr[i];
+    document.getElementById("number-display").innerText = number;
+    console.log(number);
+  });
 }
-let number = "";
-const inputNumberDisplay = (n) => {
-  number += n;
-  if (number.length > 10) return;
-  return (document.getElementById("number-display").innerText = number);
-};
+
+//
+// have a class for just buttons 0-9 and dot
+// make html button match order of Array.
+
+// const button7 = document.getElementById("button7");
+// console.log(button7.value);
+// button7.addEventListener("click", () => {
+//   document.getElementById("number-display").innerText = button7.value;
+// });
 
 // const numberDisplay0 = () => {
 //   document.getElementById("number-display").innerText = 0;
