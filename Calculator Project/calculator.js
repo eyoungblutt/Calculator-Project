@@ -29,7 +29,7 @@ const equalButton = document.getElementById("button-equals");
 
 equalButton.addEventListener("click", () => {
   if (operator === "+") {
-    let plus = numberTwo + numberOne;
+    let plus = Number(numberTwo) + Number(numberOne);
     document.getElementById("number-display").innerText = plus;
   } else if (operator === "-") {
     let minus = numberTwo - numberOne;
