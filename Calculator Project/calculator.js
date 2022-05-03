@@ -8,7 +8,6 @@ for (let i = 0; i < numbersArr.length; i++) {
   numberButtons[i].addEventListener("click", () => {
     numberOne += numbersArr[i];
     document.getElementById("number-display").innerText = numberOne;
-    return numberOne;
   });
 }
 
@@ -19,20 +18,30 @@ let operatorArr = ["", "", "", "/", "x", "-", "+"];
 for (let i = 0; i < operatorArr.length; i++) {
   operatorButtons[i].addEventListener("click", () => {
     operator = operatorArr[i];
+    numberTwo = numberOne;
+    numberOne = "";
     document.getElementById("number-display").innerText = operator;
-    console.log(operator);
+    return operator;
   });
 }
 
-// for (let i = 0; i < numbersArr.length; i++) {
-//   numberButtons[i].addEventListener("click", () => {
-//     numberOne += numbersArr[i];
-//     document.getElementById("number-display").innerText = numberOne;
-//     return numberOne;
-//   });
-// }
+const equalButton = document.getElementById("button-equals");
 
-// we have the first number and operators showing up. now we need the second set of numbers to go to number 2...?
+equalButton.addEventListener("click", () => {
+  if (operator === "+") {
+    let plus = numberTwo + numberOne;
+    document.getElementById("number-display").innerText = plus;
+  } else if (operator === "-") {
+    let minus = numberTwo - numberOne;
+    document.getElementById("number-display").innerText = minus;
+  } else if (operator === "/") {
+    let divide = numberTwo / numberOne;
+    document.getElementById("number-display").innerText = divide;
+  } else if (operator === "x") {
+    let multiply = numberTwo * numberOne;
+    document.getElementById("number-display").innerText = multiply;
+  }
+});
 
 // numbers going over the 10 character screen limit?
 // if (number > 10) {
