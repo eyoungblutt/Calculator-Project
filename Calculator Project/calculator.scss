@@ -8,8 +8,8 @@
   background-color: colours.$background-color;
   border-radius: 20px;
   border: 2px solid colours.$text-colour;
-  height: 500px;
-  width: 400px;
+  height: 480px;
+  width: 350px;
   box-shadow: 4px 4px 4px colours.$text-colour;
 }
 .main-calculator__number-display {
@@ -31,7 +31,8 @@
   grid-area: text1;
   height: 25px;
   display: flex;
-  flex .text-main {
+
+  .text-main {
     font-weight: bolder;
     margin: 0px;
     padding: 0px;
@@ -40,6 +41,7 @@
     font-size: 8px;
     margin: 0px;
     padding: 0px;
+    font-weight: bolder;
   }
   .text-sub-two {
     font-size: 8px;
@@ -61,7 +63,7 @@
     background-color: colours.$battery-colour;
     height: 30px;
     width: 100px;
-    margin: 20px;
+    margin: 5px;
     border-radius: 10px;
     border: 3px solid rgb(44, 42, 42);
     box-shadow: 2px 2px 2px rgb(44, 42, 42);
@@ -92,7 +94,7 @@
   margin: 2px;
   padding: 0px;
   height: 50px;
-  width: 50px;
+  width: 60px;
   font-size: 40px;
   font-weight: bolder;
   box-shadow: 2px 2px 2px colours.$text-colour;
@@ -106,7 +108,7 @@
   color: colours.$button-text-colour;
   border-radius: 100px;
   padding: 10px;
-  margin: 2px;
+  margin: 5px;
   height: 50px;
   width: 50px;
   font-size: 25px;

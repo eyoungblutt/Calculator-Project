@@ -42,7 +42,3 @@ equalButton.addEventListener("click", () => {
     document.getElementById("number-display").innerText = multiply;
   }
 });
-
-// numbers going over the 10 character screen limit?
-// if (number > 10) {
-//   return;
