@@ -1,13 +1,13 @@
 .main-calculator {
   display: grid;
   grid-template-areas: "output output output" "text1 text1 text1" "buttons1 buttons2 buttons3" "equals equals equals";
-  grid-template-columns: 100px 200px 100px;
+  grid-template-columns: 70px 200px 70px;
   grid-template-rows: 100px 75px 225px 100px;
   background-color: rgb(0, 187, 253);
   border-radius: 20px;
   border: 2px solid rgb(4, 76, 188);
-  height: 500px;
-  width: 400px;
+  height: 480px;
+  width: 350px;
   box-shadow: 4px 4px 4px rgb(4, 76, 188);
 }
 
@@ -32,7 +32,7 @@
   height: 25px;
   display: flex;
 }
-.main-container__text flex .text-main {
+.main-container__text .text-main {
   font-weight: bolder;
   margin: 0px;
   padding: 0px;
@@ -41,6 +41,7 @@
   font-size: 8px;
   margin: 0px;
   padding: 0px;
+  font-weight: bolder;
 }
 .main-container__text .text-sub-two {
   font-size: 8px;
@@ -62,7 +63,7 @@
   background-color: rgb(127, 107, 105);
   height: 30px;
   width: 100px;
-  margin: 20px;
+  margin: 5px;
   border-radius: 10px;
   border: 3px solid rgb(44, 42, 42);
   box-shadow: 2px 2px 2px rgb(44, 42, 42);
@@ -94,7 +95,7 @@
   margin: 2px;
   padding: 0px;
   height: 50px;
-  width: 50px;
+  width: 60px;
   font-size: 40px;
   font-weight: bolder;
   box-shadow: 2px 2px 2px rgb(4, 76, 188);
@@ -108,7 +109,7 @@
   color: rgb(17, 195, 255);
   border-radius: 100px;
   padding: 10px;
-  margin: 2px;
+  margin: 5px;
   height: 50px;
   width: 50px;
   font-size: 25px;
